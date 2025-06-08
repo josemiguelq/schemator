@@ -12,6 +12,10 @@ Its goal is to ensure consistent API responses and avoid outdated documentation 
 - 🎯 Laravel middleware integration
 - 🔍 Ensures consistency between code and documentation
 
+## 📌 Limitations
+- Currently designed for use with Laravel only
+- Validating responses only, (working on requests schema )
+
 ---
 
 ## 📦 Installation
@@ -108,9 +112,6 @@ PHP 8.1+
 Laravel 10+
 
 PHPUnit (for tests)
-
-## 📌 Limitations
-Currently designed for use with Laravel only
 
 Uses a custom JSON schema-like structure for defining response formats
 

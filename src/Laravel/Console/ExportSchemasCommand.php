@@ -10,7 +10,7 @@ use Schemator\Contracts\ResponseDocument;
 class ExportSchemasCommand extends Command
 {
     protected $signature = 'schemator:export {--output=swagger.json}';
-    protected $description = 'Exporta todos os schemas registrados no middleware Schemator em formato Swagger (OpenAPI 3.0).';
+    protected $description = 'Exports all schemas registered in the Schemator middleware in Swagger (OpenAPI 3.0) format.';
 
     public function handle()
     {

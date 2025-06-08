@@ -9,7 +9,7 @@ use Schemator\Contracts\ResponseDocument;
 class ListSchemasCommand extends Command
 {
     protected $signature = 'schemator:list';
-    protected $description = 'Lista todas as rotas com schema de resposta (middleware schemator)';
+    protected $description = 'List all routes with response schema (middleware schemator)';
 
     public function handle()
     {
