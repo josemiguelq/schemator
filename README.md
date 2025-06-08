@@ -18,6 +18,7 @@ Its goal is to ensure consistent API responses and avoid outdated documentation 
 
 ```bash
 composer require jose.miguel/schemator
+```
 
 ## 🔧 Usage in Laravel
 ### 1. Create a Schema Document
