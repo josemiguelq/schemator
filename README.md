@@ -1,4 +1,4 @@
-# Schemator
+# Schemator - NO more boring annotations!
 
 **Schemator** is a Laravel package for automatic validation of JSON response schemas and OpenAPI 3.0 documentation generation.  
 Its goal is to ensure consistent API responses and avoid outdated documentation by generating OpenAPI specs directly from your route definitions.
