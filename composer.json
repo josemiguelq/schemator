@@ -1,0 +1,34 @@
+{
+    "name": "jose.miguel/schemator",
+    "require-dev": {
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-laravel": "^3.2",
+        "orchestra/testbench": "^10.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Schemator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+    "psr-4": {
+      "Schemator\\Tests\\": "tests/"
+    }
+  },
+    "authors": [
+        {
+            "name": "Jose Miguel",
+            "email": "jose.miguelq95@gmail.com"
+        }
+    ],
+    "require": {
+        "respect/validation": "^2.2",
+        "illuminate/support": "*",
+        "illuminate/routing": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
