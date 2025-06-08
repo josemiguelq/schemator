@@ -11,12 +11,12 @@ class SchematorServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-         $this->app->make(Router::class)->aliasMiddleware('schemator', SchematorMiddleware::class);
+        $this->app->make(Router::class)->aliasMiddleware('schemator', SchematorMiddleware::class);
     }
 
     public function register()
     {
-     if ($this->app->runningInConsole()) {
+        if ($this->app->runningInConsole()) {
             $this->commands([
                 ListSchemasCommand::class,
                   \Schemator\Laravel\Console\ExportSchemasCommand::class,
@@ -24,4 +24,3 @@ class SchematorServiceProvider extends ServiceProvider
         }
     }
 }
-

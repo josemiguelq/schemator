@@ -4,9 +4,11 @@ namespace Schemator\Engine;
 
 use Schemator\Contracts\ResponseDocument;
 
-class OpenApiExport {
-public function handle($routes)
-    { foreach ($routes as $route) {
+class OpenApiExport
+{
+    public function handle($routes)
+    {
+        foreach ($routes as $route) {
             foreach ($route->gatherMiddleware() as $middleware) {
                 if (str_starts_with($middleware, 'schemator:')) {
                     [$prefix, $class] = explode(':', $middleware);
@@ -58,8 +60,8 @@ public function handle($routes)
             ],
             'paths' => $schemas,
         ];
-}
-private function convertToSwaggerProperties(array $rules): array
+    }
+    private function convertToSwaggerProperties(array $rules): array
     {
         $properties = [];
         foreach ($rules as $key => $rule) {
@@ -76,7 +78,7 @@ private function convertToSwaggerProperties(array $rules): array
         return $properties;
     }
 
-private function extractRequired(array $rules): array
+    private function extractRequired(array $rules): array
     {
         $required = [];
 

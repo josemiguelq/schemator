@@ -11,4 +11,3 @@ interface ResponseDocument
      */
     public function rules(): array;
 }
-

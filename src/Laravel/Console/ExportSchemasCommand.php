@@ -17,7 +17,6 @@ class ExportSchemasCommand extends Command
         $routes = Route::getRoutes();
         $schemas = [];
         $swagger = (new OpenApiExport())->handle($routes);
-        dd($swagger);
         $outputFile = base_path($this->option('output'));
         file_put_contents($outputFile, json_encode($swagger, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
         $this->info("Swagger exportado com sucesso em: {$outputFile}");

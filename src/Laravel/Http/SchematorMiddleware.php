@@ -32,7 +32,7 @@ class SchematorMiddleware
         $document = new $documentClass();
         $rules = $document->rules();
         try {
-        (new SchemaValidator())->validate($body, $rules, $response->status());
+            (new SchemaValidator())->validate($body, $rules, $response->status());
         } catch (ValidationException $e) {
             abort(500, 'Schema validation failed: ' . $e->getFullMessage());
         }
@@ -40,4 +40,3 @@ class SchematorMiddleware
         return $response;
     }
 }
-

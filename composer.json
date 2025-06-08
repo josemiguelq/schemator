@@ -3,7 +3,8 @@
     "require-dev": {
         "pestphp/pest": "^3.8",
         "pestphp/pest-plugin-laravel": "^3.2",
-        "orchestra/testbench": "^10.3"
+        "orchestra/testbench": "^10.3",
+        "friendsofphp/php-cs-fixer": "^3.75"
     },
     "autoload": {
         "psr-4": {
